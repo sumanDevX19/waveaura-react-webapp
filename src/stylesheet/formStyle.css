@@ -1,0 +1,247 @@
+:root {
+  --bg: #d4d3d3bb;
+  --text: #000000;
+  --card: #d4d3d3bb;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #ffffff;
+  --card: #2b2b2b;
+  --revtxt:#1e1e1e;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    min-width: 500px;
+    width: 700px;
+    /* padding: 50px; */
+    border-radius: 20px;
+
+    border: none;
+    box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 20%);
+    transition: all 0s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+    background-color: var(--bg);
+    color: var(--text);
+
+
+
+
+}
+
+.form-left {
+    width: 50%;
+    height: 100%;
+    padding: 40px 45px;
+    
+}
+
+.form-right {
+    width: 50%;
+    height: 100%;
+    background: #4776E6;
+    overflow: hidden;
+
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+    
+    background: linear-gradient(to right, #8E54E9, #4776E6);
+    
+    /* display: none; */
+}
+
+.right-content{
+    width: 100%;
+    height: 100%;
+    padding: 190px 10px;
+    background: #4776E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heading {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.form-container:hover {
+    box-shadow: 0px 0px 30px 1px rgb(0 0 0 / 20%);
+}
+
+
+
+.input-field {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #00000050;
+    font-size: 15px;
+
+}
+
+#city {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #00000050;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.values {
+    background-color: #fff;
+    padding: 10px 15px;
+}
+
+#gender-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#submit {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 900;
+
+
+    background: #4776E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6);
+    transition: all 1ms ease-in-out;
+
+
+}
+
+#submit:hover{
+    background: #4776E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.submit-box {
+    width: 100%;
+}
+
+.error-class{
+    color:red;
+    font-size:10px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.required-message{
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Toast  */
+
+
+.toast {
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        padding: 16px 24px;
+        border-radius: 8px;
+        background-color: #333;
+        color: #fff;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+      }
+
+      /* Show toast */
+      .toast.show {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      /* Success type */
+      .toast.success {
+        background-color: #28a745;
+      }
+
+      /* Error type */
+      .toast.error {
+        background-color: #dc3545;
+      }
+
+
+      @media (max-width: 768px) {
+        .form-container {
+            flex-direction: column;
+            width: 50%;
+            min-width: unset;
+        }
+        .form-left, .form-right {
+            width: 100%;
+            height: auto;
+        }
+        .right-content {
+            padding: 50px 10px;
+        }
+        
+      }
+
+      @media 
+      (max-width: 480px) {
+        .form-container {
+            width: 90%;
+            min-width: unset;
+        }
+        .form-left, .form-right {
+            width: 100%;
+            height: auto;
+        }
+        .right-content {
+            padding: 30px 10px;
+        }
+        
+      }
+
+      
