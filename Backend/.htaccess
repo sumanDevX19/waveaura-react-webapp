@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Don't rewrite if the file or directory exists
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Exclude specific file(s) from being rewritten
+RewriteCond %{REQUEST_URI} !^/get_wishlist_products.php$
+
+# Fallback to protected.php for all others
+RewriteRule ^ protected.php [L]
