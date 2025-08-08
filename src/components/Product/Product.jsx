@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Product = ({ number }) => {
   const [products, setProducts] = useState([]);
+  
 
 
 

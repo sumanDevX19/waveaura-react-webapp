@@ -20,13 +20,18 @@ body.dark {
     font-family: sans-serif;
 }
 
+body {
+    background-color: var(--card);
+    
+}
 
 .main-container {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .form-container {
@@ -56,6 +61,9 @@ body.dark {
     width: 50%;
     height: 100%;
     padding: 40px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 

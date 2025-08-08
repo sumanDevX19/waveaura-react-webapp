@@ -19,7 +19,7 @@ body.dark {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: var(--bg);
+    background-color: var(--card);
     color: var(--text);
 }
 
@@ -28,7 +28,7 @@ body.dark {
     height: 200px;
     border-radius: 50%;
     border: 15px solid #ddd;
-    border-top-color: #333;
+    border-top-color:  #8E54E9;
     animation: rotate 1s infinite;
 }
 

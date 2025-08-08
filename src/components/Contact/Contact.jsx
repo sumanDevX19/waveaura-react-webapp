@@ -91,7 +91,7 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-left">
           <figure className="image-container">
-            <img src="./frontimage.png" alt="Apple Headphone" id="contact-image" />
+            <img src="./Asset/frontimage.png" alt="Apple Headphone" id="contact-image" />
           </figure>
         </div>
 

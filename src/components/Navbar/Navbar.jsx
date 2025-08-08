@@ -106,7 +106,7 @@ const Navbar = ({ login }) => {
                     <Link to="/login" className="navlink">Login</Link>
                 )}
 
-                <Link to="/" className="navlink" style={{ display: "flex", alignItems: "center" }}>
+                <Link to="/cart" className="navlink" style={{ display: "flex", alignItems: "center" }}>
                     <span className="material-symbols-outlined" style={{ cursor: 'pointer' }}>
                         shopping_cart
                     </span>
@@ -160,7 +160,7 @@ const Navbar = ({ login }) => {
                 </Link>
 
                 <Link className='navlink' style={{ display: 'flex', alignItems: 'center' }}>
-                    <Classic toggled={theme === 'light'} onToggle={toggleTheme} duration={750} style={{ transform: 'scale(2)', color: "#fff" }} />
+                    <Classic toggled={theme === 'light'} onToggle={toggleTheme} duration={750} style={{ transform: 'scale(2)', color: "#fff", display: "flex", alignItems: "center" }} />
                 </Link>
             </div>
 

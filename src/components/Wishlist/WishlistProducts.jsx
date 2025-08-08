@@ -34,8 +34,8 @@ const WishlistProducts = () => {
     const storedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
     const updatedWishlist = storedWishlist.filter((itemId) => itemId !== id);
     localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
-    setWishlistCount(updatedWishlist.length); // 🔁 Trigger re-render
-    window.dispatchEvent(new Event("wishlistUpdated")); // optional global listener
+    setWishlistCount(updatedWishlist.length); 
+    window.dispatchEvent(new Event("wishlistUpdated")); 
   };
 
   return (
@@ -58,7 +58,7 @@ const WishlistProducts = () => {
             <div className="product-data-section">
               <div className="wishlist-icon-container">
                 <a onClick={() => handleWishlistClick(product.id)}>
-                  <i className="fa-solid fa-heart"></i>
+                  <i className="fa-solid fa-heart" style={{color:"red"}}></i>
                 </a>
               </div>
               <h3>{product.name}</h3>

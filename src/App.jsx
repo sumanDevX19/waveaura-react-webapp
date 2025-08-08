@@ -16,6 +16,8 @@ import WishlistProducts from './components/Wishlist/WishlistProducts'
 import Wishlist from './components/Wishlist/Wishlist'
 import LoginForm from './components/Login/LoginForm'
 import Login from './components/Login/Login'
+import Cart from './components/Cart/Cart'
+import CartPage from './components/Cart/CartPage'
 
 
 
@@ -33,7 +35,7 @@ function App() {
         if(result.status === "success"){
           setLoging(true)
           localStorage.setItem("token", result.token);
-          console.log(result.token);
+          
           
         }
       })
@@ -59,6 +61,8 @@ function App() {
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="/wishlist" element={<Wishlist/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/cart" element={<CartPage/>} />
+
 
           
 
