@@ -1,4 +1,6 @@
-# React + Vite
+# WaveAura React Website
+
+![alt text](<WaveAura React Wesite UI.png>)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
